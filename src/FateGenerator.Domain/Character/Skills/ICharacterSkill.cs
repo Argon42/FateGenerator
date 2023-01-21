@@ -1,7 +1,13 @@
 namespace FateGenerator.Domain;
 
-public interface ICharacterSkill
+public interface ICharacterSkill : ICharacterSkillObserver
 {
-    ISkill Skill { get; }
+    new ISkill Skill { set; get; }
+    new Power Power { set; get; }
+}
+
+public interface ICharacterSkillObserver
+{
+    ISkillObserver Skill { get; }
     Power Power { get; }
 }

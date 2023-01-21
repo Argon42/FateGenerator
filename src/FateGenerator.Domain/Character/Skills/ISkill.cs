@@ -1,10 +1,19 @@
 ﻿namespace FateGenerator.Domain;
 
-public interface ISkill
+public interface ISkill : ISkillObserver
+{
+    new string Name { set; get; }
+    new Overcome? Overcome { set; get; }
+    new CreateAnAdvantage? CreateAnAdvantage { set; get; }
+    new Attack? Attack { set; get; }
+    new Defend? Defend { set; get; }
+}
+
+public interface ISkillObserver
 {
     string Name { get; }
-    Overcome? Overcome { get; }
-    CreateAnAdvantage? CreateAnAdvantage { get; }
-    Attack? Attack { get; }
-    Defend? Defend { get; }
+    ICharacterActionObserver? Overcome { get; }
+    ICharacterActionObserver? CreateAnAdvantage { get; }
+    ICharacterActionObserver? Attack { get; }
+    ICharacterActionObserver? Defend { get; }
 }
