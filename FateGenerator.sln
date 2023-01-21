@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FateGenerator.Presentation.Console", "src\FateGenerator.Presentation.Console\FateGenerator.Presentation.Console.csproj", "{B924620C-E3CA-44C3-9AFF-761FAD652964}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1CF37E9-DA67-4900-8190-4371A2AB8C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FateGenerator.Domain", "src\FateGenerator.Domain\FateGenerator.Domain.csproj", "{C75B1BC4-C893-4A4D-9128-389038C82B6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B924620C-E3CA-44C3-9AFF-761FAD652964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B924620C-E3CA-44C3-9AFF-761FAD652964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B924620C-E3CA-44C3-9AFF-761FAD652964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B924620C-E3CA-44C3-9AFF-761FAD652964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B924620C-E3CA-44C3-9AFF-761FAD652964} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
+		{C75B1BC4-C893-4A4D-9128-389038C82B6D} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
 	EndGlobalSection
 EndGlobal
