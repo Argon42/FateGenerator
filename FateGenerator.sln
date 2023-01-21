@@ -6,6 +6,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D1CF37E9-DA6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FateGenerator.Domain", "src\FateGenerator.Domain\FateGenerator.Domain.csproj", "{C75B1BC4-C893-4A4D-9128-389038C82B6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FateGenerator.Infrastructure", "src\FateGenerator.Infrastructure\FateGenerator.Infrastructure.csproj", "{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FateGenerator.Application", "src\FateGenerator.Application\FateGenerator.Application.csproj", "{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +24,19 @@ Global
 		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75B1BC4-C893-4A4D-9128-389038C82B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B924620C-E3CA-44C3-9AFF-761FAD652964} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
 		{C75B1BC4-C893-4A4D-9128-389038C82B6D} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
+		{B51AB5C9-FF2A-4AD1-8406-A9DB68B9BFEE} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
+		{CDCFF73A-26B7-4082-A78C-8A5FF83C2B4A} = {D1CF37E9-DA67-4900-8190-4371A2AB8C70}
 	EndGlobalSection
 EndGlobal

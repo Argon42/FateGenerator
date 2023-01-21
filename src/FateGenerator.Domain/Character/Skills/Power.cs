@@ -1,4 +1,4 @@
-﻿namespace Generator.Core;
+﻿namespace FateGenerator.Domain;
 
 public enum Power
 {

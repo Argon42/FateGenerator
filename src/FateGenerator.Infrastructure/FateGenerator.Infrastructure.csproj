@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FateGenerator.Application\FateGenerator.Application.csproj" />
+      <ProjectReference Include="..\FateGenerator.Domain\FateGenerator.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

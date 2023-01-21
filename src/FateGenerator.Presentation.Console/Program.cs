@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// using FateGenerator.Application;
+// using FateGenerator.Domain;
+// using FateGenerator.Infrastructure;
 
-Console.WriteLine("Hello, World!");
+// string path = Path.Combine(Environment.CurrentDirectory, "GeneratorData");
+// IDataSource filesSource = new FilesDataSource(path);
+// IGenerator generator = new RandomGenerator();
+// IAspect characterAspect = generator.CreateRandomCharacterAspect();
+//
+// int count = 3;
+// IList<IAspect> characterAspects =  generator.CreateRandomCharacterAspects(count);
+
+Console.ReadLine();

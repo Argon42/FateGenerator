@@ -8,4 +8,9 @@
         <RootNamespace>ConsoleApp</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FateGenerator.Infrastructure\FateGenerator.Infrastructure.csproj" />
+      <ProjectReference Include="..\FateGenerator.Domain\FateGenerator.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
