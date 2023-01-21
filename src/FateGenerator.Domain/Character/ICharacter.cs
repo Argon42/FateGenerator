@@ -2,7 +2,7 @@ namespace FateGenerator.Domain;
 
 public interface ICharacter : ICharacterObserver
 {
-    new string Name { set; get; }
+    new ICharacterName Name { set; get; }
     new string? Description { set; get; }
     new int FatePointRefreshes { set; get; }
     new int FatePoints { set; get; }
@@ -17,7 +17,7 @@ public interface ICharacter : ICharacterObserver
 
 public interface ICharacterObserver
 {
-    string Name { get; }
+    ICharacterNameObserver Name { get; }
     string? Description { get; }
     int FatePointRefreshes { get; }
     int FatePoints { get; }

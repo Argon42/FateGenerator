@@ -5,7 +5,7 @@ namespace FateGenerator.Application.Common.Models.Character;
 [Serializable]
 public class Character : ICharacter
 {
-    public required string Name { get; set; }
+    public required ICharacterName Name { get; set; }
     public string? Description { get; set; }
     public int FatePointRefreshes { get; set; }
     public int FatePoints { get; set; }
@@ -18,17 +18,12 @@ public class Character : ICharacter
     public List<IConsequence>? Consequences { get; init; }
 
 
+    ICharacterNameObserver ICharacterObserver.Name => Name;
     IReadOnlyList<IAspectObserver> ICharacterObserver.Aspects => Aspects;
-
     IReadOnlyList<IQuantitativeAspectObserver>? ICharacterObserver.Boosts => Boosts;
-
     IReadOnlyList<IQuantitativeAspectObserver>? ICharacterObserver.SituationAspects => SituationAspects;
-
     IReadOnlyList<IStuntObserver>? ICharacterObserver.Stunts => Stunts;
-
     IReadOnlyList<IExtraObserver>? ICharacterObserver.Extras => Extras;
-
     IReadOnlyList<IStressTrackObserver>? ICharacterObserver.StressTracks => StressTracks;
-
     IReadOnlyList<IConsequenceObserver>? ICharacterObserver.Consequences => Consequences;
 }
